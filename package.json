@@ -1,0 +1,50 @@
+{
+  "name": "contactlist",
+  "description": "",
+  "version": "0.1.0",
+  "author": "marc charmois <marc.charmois@gmail.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MarcCharmois/app-service-api-node-contact-list.git"
+  },
+  "bugs": "https://github.com/MarcCharmois/app-service-api-node-contact-list/issues",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": "~0.10.22"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.0.0",
+    "extend": ">=3.0.2",
+    "handlebars": ">=4.7.7",
+    "hoek": ">=5.0.3",
+    "js-yaml": ">=3.13.1",
+    "jsonpath": "^1.0.2",
+    "lodash": ">=4.17.21",
+    "minimatch": ">=3.0.2",
+    "moment": ">=2.19.3",
+    "static-eval": ">=2.0.0",
+    "superagent": ">=3.7.0",
+    "swagger-ui": ">=4.1.3",
+    "swaggerize-express": "^4.0.5",
+    "swaggerize-ui": "^1.0.1",
+    "uglify-js": ">=2.6.0",
+    "mime": ">=2.0.3"
+  },
+  "devDependencies": {
+    "enjoi": "~0.1.16",
+    "istanbul": "~0.2.3",
+    "jshint": "^2.4.1",
+    "supertest": "~0.13.0",
+    "tape": "^4.11.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "cover": "istanbul cover tape -- test/*.js",
+    "lint": "jshint -c .jshintrc lib/**/*.js"
+  },
+  "main": "./server"
+}
